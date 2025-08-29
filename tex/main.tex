@@ -1,0 +1,57 @@
+
+\documentclass[11pt]{article}
+\usepackage[a4paper,margin=1in]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{bm}
+\usepackage{enumitem}
+
+\title{The Entropy Ledger: A Resource Theory and Information Inequalities for Consistent Time Travel\\
+\large (with Experimental Proposals and a Metaphysics Appendix)}
+\author{Spiros Ts. \and Collaborators}
+\date{\today}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+\newtheorem{proposition}{Proposition}
+
+\newcommand{\KL}{D_{\mathrm{KL}}}
+\newcommand{\Ps}{p_{\mathrm{succ}}}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We develop a full \emph{resource theory for consistent time travel} and derive operational information inequalities that quantify the net information gain obtainable from retrocausal (postselected) channels. Our central results include a Loop Data-Processing Inequality (Loop-DPI), a single-shot strong converse, and a thermodynamic \emph{Entropy Ledger} that lower-bounds the heat dissipation needed to restore consistency (Novikov) as a Kullback--Leibler I-projection cost. We extend the theory to multi-loop networks, propose experimentally testable photonic and ion-trap protocols, and include a Metaphysics Appendix formalizing identity and free will as history-functionals consistent with the Ledger. We also outline realistic pathways to ``real'' time travel in the operational sense: relativistic time dilation (one-way to the future) and laboratory realizations of effective retrocausality via heralded postselection and entanglement-assisted protocols.
+\end{abstract}
+
+\input{sections/01_introduction}
+\input{sections/02_model_resource_theory}
+\input{sections/03_loop_dpi_and_converse}
+\input{sections/04_entropy_ledger}
+\input{sections/05_multiloop_networks}
+\input{sections/06_thermo_and_single_shot}
+\input{sections/07_experiments_real_tt}
+\input{sections/08_discussion_open}
+\appendix
+\input{sections/D_additional_figures}
+
+\input{sections/C_detailed_proofs}
+
+\input{sections/A_metaphysics_appendix}
+\input{sections/B_notation_proofs_outline}
+
+\bibliographystyle{plain}
+\bibliography{refs}
+% \begin{thebibliography}{9}
+\bibitem{Landauer1961} R. Landauer. Irreversibility and heat generation in the computing process. \emph{IBM Journal of Research and Development}, 1961.
+\bibitem{Crooks} G. E. Crooks. Entropy production fluctuation theorem and the nonequilibrium work relation for free energy differences. \emph{Phys. Rev. E}, 1999.
+\bibitem{Jarzynski} C. Jarzynski. Nonequilibrium equality for free energy differences. \emph{Phys. Rev. Lett.}, 1997.
+% \end{thebibliography}
+
+\end{document}

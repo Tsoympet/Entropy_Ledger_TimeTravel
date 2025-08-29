@@ -1,0 +1,24 @@
+
+\section{Detailed Proofs}
+We work in the Heisenberg picture and allow a single non-trace-preserving map $\Pi:\mathcal{B}(\mathcal{H})\to\mathcal{B}(\mathcal{H})$ that succeeds with probability $\Ps$. Denote by $\mathsf{Succ}$ the heralded event. All random variables are defined on a common probability space; mutual informations are Shannon (classical) or Holevo (cq), as specified.
+
+\subsection{Loop-DPI (Theorem 1) --- Full Proof}
+Let $X$ be the classical input that parametrizes preparations on a system $S$ fed into the looped circuit. Let $Y$ be a classical readout at the end of the cycle. Consider the joint distribution under the successful branch: $P_{X,Y\mid \mathsf{Succ}}$. We show that
+\[
+I(X;Y)_{\mid \mathsf{Succ}} \le -\log \Ps.
+\]
+The net loop information gain per \emph{attempt} is $\Delta I_{\circlearrowleft}:=\Ps \, I(X;Y)_{\mid \mathsf{Succ}}$, hence $\Delta I_{\circlearrowleft}\le -\Ps\log \Ps \le -\log \Ps$ with the coding normalization we adopt (at most one bit per successful herald).
+
+\paragraph{Radon--Nikodym bound.} Let $P$ be the prior measure on histories (instrument outcomes on the forward DAG) and $Q(\cdot)=P(\cdot\mid \mathsf{Succ})$ the conditioned measure induced by $\Pi$. The likelihood ratio $L = \frac{dQ}{dP}$ satisfies $L\le 1/\Ps$ almost surely and $\mathbb{E}_P[L]=1$. For any random variables $U,V$ measurable w.r.t.\ histories,
+\[
+I_Q(U;V) \;=\; D(Q_{UV}\Vert Q_U Q_V) \;\le\; D(P_{UV}L \Vert P_U P_V) \;\le\; \log \|L\|_\infty \;\le\; -\log \Ps,
+\]
+where we used data processing of $D(\cdot\Vert\cdot)$ under the projection $(U,V)$ and the bound by the essential supremum of $L$. This yields the stated inequality.
+
+\paragraph{Finite accuracy.} If the implemented map $\widetilde{\Pi}$ is $\varepsilon$-close in trace distance to $\Pi$ on the relevant support, then standard continuity bounds (Alicki--Fannes type) give the additive penalty $-\log(1-\varepsilon)$ for small $\varepsilon$.
+
+\subsection{Single-shot Strong Converse (Theorem 4) --- Proof Sketch}
+We replace Shannon $I$ with smooth min/max entropies $H_{\min}^{\delta},H_{\max}^{\delta}$ and use the asymptotic equipartition property (AEP) for blocklength $n$. The loop gain target $\Delta I> -\log \Ps$ implies a hypothesis-testing problem with type-I error bounded by $\Ps^n$ while trying to decode more than $n(-\log \Ps)$ bits across the loop; by the meta-converse in one-shot information theory the overall error lower-bounds exponentially in $n$.
+
+\subsection{Entropy Ledger (Theorem 2) --- Proof Details}
+Let $P_{\text{hist}}$ be the prior measure and $\mathcal{C}$ a convex consistency set. The I-projection $P^\star$ minimizes $\KL(P_{\text{hist}}\Vert Q)$ over $Q\in\mathcal{C}$. Consider a minimal-work protocol that transforms $P_{\text{hist}}$ to $P^\star$ by a stochastic map acting only on an environment at temperature $T$. By Landauer's principle and nonequilibrium work relations (Jarzynski/Crooks), the expected work satisfies $\langle W\rangle\ge kT\,\KL(P_{\text{hist}}\Vert P^\star)$, hence the entropy production bound for $\mathsf{ED}$.

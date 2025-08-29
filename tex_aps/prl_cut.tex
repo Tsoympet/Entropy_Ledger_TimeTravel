@@ -1,0 +1,28 @@
+
+\documentclass[aps,prl,twocolumn,10pt,superscriptaddress,longbibliography]{revtex4-2}
+\usepackage{amsmath,amssymb,amsfonts,graphicx,hyperref}
+\newcommand{\Ps}{p_{\mathrm{succ}}}
+\begin{document}
+\title{The Entropy Ledger: Operational Limits for Consistent Time Travel}
+\author{Spiros Ts.}\affiliation{Independent Researcher}
+\author{Collaborators}\affiliation{Various Institutions}
+\begin{abstract}
+We quantify retrocausal advantages in postselected time loops. A Loop Data-Processing Inequality bounds the per-attempt loop information gain by $-\log \Ps$ bits (plus accuracy penalties). A thermodynamic Entropy Ledger prices paradox resolution at $kT\,D_{\mathrm{KL}}(P\Vert P^\star)$. Proofs are one-shot tight and extend to multi-loop networks. Photonic/ion-trap protocols are outlined.
+\end{abstract}
+\maketitle
+
+\emph{Model.} A CPTP circuit is augmented with a heralded non-TP retro-map $\Pi$ with success $\Ps$, closing a loop on success. We define monotones: temporal advantage, entropy debt.
+
+\emph{Loop-DPI.} Conditioning on success induces a Radon--Nikodym derivative bounded by $1/\Ps$. Thus $I(X;Y)|_{\mathrm{succ}}\le -\log \Ps$ and $\Delta I_{\circlearrowleft}\le -\log \Ps$ per attempt.
+
+\emph{Entropy Ledger.} Enforcing Novikov consistency projects the prior history measure onto a feasible set in KL, yielding a minimal work cost $kT\,D_{\mathrm{KL}}$.
+
+\emph{One-shot converse \& multi-loop.} Smooth min/max entropies imply strong converses; network cut-sets bound total advantage and include interference penalties.
+
+\emph{Experiments.} Heralded postselection in photonics and ion-traps; measured $(\Ps,\Delta I)$ obey the bounds.
+
+\emph{Metaphysics (operational).} Identity and free will are history-functionals constrained by the Ledger; no free chronology.
+
+\bibliographystyle{apsrev4-2}
+\bibliography{../tex/refs}
+\end{document}

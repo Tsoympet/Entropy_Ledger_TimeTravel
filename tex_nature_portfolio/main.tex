@@ -1,0 +1,32 @@
+
+% If you have the 'nature' class installed, this will compile as-is.
+% Otherwise, switch to the provided Nature-style mimic in ../tex_nature/
+\RequirePackage{snapshot}
+\documentclass{nature}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\title{The Entropy Ledger: A Resource Theory and Information Inequalities for Consistent Time Travel}
+\author{Spiros Ts. \& Collaborators}
+
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We develop a resource theory for consistent time travel with operational bounds (Loop-DPI), a thermodynamic Entropy Ledger (Novikov as I-projection), multi-loop network cut-sets, and single-shot strong converses. Experiments and a metaphysics appendix are included.
+\end{abstract}
+
+\input{../tex/sections/01_introduction}
+\input{../tex/sections/02_model_resource_theory}
+\input{../tex/sections/03_loop_dpi_and_converse}
+\input{../tex/sections/04_entropy_ledger}
+\input{../tex/sections/05_multiloop_networks}
+\input{../tex/sections/06_thermo_and_single_shot}
+\input{../tex/sections/07_experiments_real_tt}
+\input{../tex/sections/08_discussion_open}
+
+\bibliographystyle{naturemag}
+\bibliography{../tex/refs}
+
+\end{document}

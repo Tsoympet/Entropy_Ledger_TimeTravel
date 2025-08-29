@@ -1,0 +1,17 @@
+
+\section{Model and Resource Theory}
+We consider a directed acyclic circuit of CPTP channels $\Phi_0,\ldots,\Phi_{T-1}$ augmented by a single retro-edge realized by a non-trace-preserving map $\Pi$ applied with heralded success probability $\Ps$. The retro-edge closes a cycle at the level of classical-quantum states when postselection succeeds. We package the ``time resource'' as
+\[
+\mathcal{R} \equiv (\Pi, \Ps, \Delta S_{\mathrm{diss}}, \varepsilon),
+\]
+where $\Delta S_{\mathrm{diss}}$ is the minimal entropy production (heat) in the environment for enforcing consistency, and $\varepsilon$ is the overall implementation error (trace distance).
+
+\begin{definition}[Free operations]
+Operations that do not create new retro-edges: local CPTP maps, classical post-processing and feedback, coupling to thermal baths, and wiring without additional postselection.
+\end{definition}
+
+\begin{definition}[Monotones]
+We use: (i) Temporal Advantage $\mathsf{T\!-\!Adv}$, the net loop information gain; (ii) Entropy Debt $\mathsf{ED}$, the minimal required dissipation to achieve consistency; (iii) Chronology Violation Index $\mathsf{CVI}$, the minimal mass of probability reallocation; (iv) Arrow Torsion $\mathsf{AT}$, the asymmetry between forward and backward information flows.
+\end{definition}
+
+We define distillation and dilution tasks and show that the Pareto frontier between $(\mathsf{T\!-\!Adv},\mathsf{ED})$ is convex.

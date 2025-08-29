@@ -1,0 +1,16 @@
+
+\section{Loop-DPI and Single-Shot Converse}
+\begin{theorem}[Loop Data-Processing Inequality (finite-accuracy)]
+For a circuit with one retro-edge $\Pi$ used with success probability $\Ps$ and implementation error $\varepsilon\in[0,1)$, the net loop information gain satisfies
+\[
+\Delta I_{\circlearrowleft} \;\le\; -\log \Ps \;-\; \log(1-\varepsilon).
+\]
+\end{theorem}
+
+\begin{remark}
+In the ideal case $\varepsilon=0$, the bound is $\Delta I_{\circlearrowleft}\le -\log \Ps$. Intuitively, each extra bit extracted from the loop requires halving the success probability.
+\end{remark}
+
+\begin{theorem}[Single-shot strong converse]
+With smooth min/max entropies $H_{\min}^{\delta}, H_{\max}^{\delta}$, any protocol targeting loop gain $\Delta I_{\circlearrowleft}> -\log \Ps$ incurs an overall error that grows exponentially with the blocklength.
+\end{theorem}

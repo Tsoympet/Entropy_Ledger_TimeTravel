@@ -1,0 +1,36 @@
+site_name: Entropy Ledger — Consistent Time Travel
+site_description: Resource theory, Loop-DPI, Entropy Ledger, experiments & metaphysics
+site_url: https://YOUR_USER.github.io/YOUR_REPO
+repo_url: https://github.com/YOUR_USER/YOUR_REPO
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - toc.integrate
+    - content.code.copy
+    - content.tabs.link
+nav:
+  - Home: index.md
+  - Quick Start: quickstart.md
+  - Theory:
+      - Model & Resource Theory: theory.md
+      - Loop-DPI & Single-shot: loop_dpi.md
+      - Entropy Ledger: entropy_ledger.md
+  - Simulations: simulations.md
+  - Experiments: experiments.md
+  - Metaphysics: metaphysics.md
+  - Paper Templates: templates.md
+  - FAQ: faq.md
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: true
+  - footnotes
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/YOUR_USER/YOUR_REPO
+plugins:
+  - search

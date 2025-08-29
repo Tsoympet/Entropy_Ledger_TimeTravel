@@ -1,0 +1,13 @@
+
+\section{The Entropy Ledger: Novikov as I-Projection}
+Let $P_{\text{hist}}$ denote a prior measure over histories and let $\mathcal{C}$ denote the set of Novikov-consistent histories. Define
+\[
+P_{\text{hist}}^\star \;\in\; \arg\min_{Q\in\mathcal{C}} \KL(P_{\text{hist}}\Vert Q).
+\]
+\begin{theorem}[Entropy tax for paradox resolution]
+The minimal heat dissipation needed to enforce consistency by minimally perturbing the history distribution is
+\[
+\mathsf{ED}_{\min} \;\ge\; kT\,\KL\!\big(P_{\text{hist}}\;\Vert\;P_{\text{hist}}^\star\big).
+\]
+\end{theorem}
+This follows from standard thermodynamic inequalities (Landauer) and the fact that changing distributions by a KL amount requires at least $kT$ times that KL in work, on average.

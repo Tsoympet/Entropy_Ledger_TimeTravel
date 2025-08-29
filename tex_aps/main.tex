@@ -1,0 +1,54 @@
+
+\documentclass[aps,prl,twocolumn,10pt,superscriptaddress,longbibliography]{revtex4-2}
+\usepackage{amsmath,amssymb,amsfonts,amsthm}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{bm}
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{definition}{Definition}
+\newtheorem{corollary}{Corollary}
+\newtheorem{remark}{Remark}
+
+\newcommand{\KL}{D_{\mathrm{KL}}}
+\newcommand{\Ps}{p_{\mathrm{succ}}}
+
+\begin{document}
+\title{The Entropy Ledger: A Resource Theory and Information Inequalities for Consistent Time Travel}
+
+\author{Spiros Ts.}
+\affiliation{Independent Researcher}
+\author{Collaborators}
+\affiliation{Various Institutions}
+
+\begin{abstract}
+We develop a resource theory for consistent time travel with operational bounds (Loop-DPI), a thermodynamic Entropy Ledger (Novikov as I-projection), multi-loop network cut-sets, and single-shot strong converses. We propose photonic and ion-trap experiments and include a metaphysics appendix formalizing identity and free will as Ledger-compatible functionals.
+\end{abstract}
+
+\maketitle
+
+% --- Main text brought in from the base sections directory ---
+\input{../tex/sections/01_introduction}
+\input{../tex/sections/02_model_resource_theory}
+\input{../tex/sections/03_loop_dpi_and_converse}
+\input{../tex/sections/04_entropy_ledger}
+\input{../tex/sections/05_multiloop_networks}
+\input{../tex/sections/06_thermo_and_single_shot}
+\input{../tex/sections/07_experiments_real_tt}
+\input{../tex/sections/08_discussion_open}
+
+\appendix
+\input{../tex/sections/C_detailed_proofs}
+\input{../tex/sections/D_additional_figures}
+\input{../tex/sections/A_metaphysics_appendix}
+\input{../tex/sections/B_notation_proofs_outline}
+
+\bibliographystyle{apsrev4-2}
+\bibliography{../tex/refs}
+% \begin{thebibliography}{99}
+\bibitem{Landauer1961} R. Landauer, IBM J. Res. Dev. (1961).
+\bibitem{Crooks} G. E. Crooks, Phys. Rev. E (1999).
+\bibitem{Jarzynski} C. Jarzynski, Phys. Rev. Lett. (1997).
+% \end{thebibliography}
+\end{document}

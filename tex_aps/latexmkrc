@@ -1,0 +1,4 @@
+$pdflatex = 'pdflatex -interaction=nonstopmode -file-line-error';
+$bibtex = 'bibtex %O %B';
+$clean_ext = 'bbl run.xml bcf blg aux log out toc fls fdb_latexmk synctex.gz lof lot';
+$pdf_mode = 1;
