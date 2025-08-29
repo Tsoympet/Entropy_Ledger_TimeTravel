@@ -1,0 +1,42 @@
+name: Run Simulations
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  sim:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install deps
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run sims
+        working-directory: code
+        run: |
+          python loop_dpi_sweep.py
+          python multiloop_sim.py
+          python pareto_tradeoff.py
+          python one_shot_converse.py
+          python single_shot_smoothed_bounds.py
+          python qutip_heatmap.py
+          # optional; will fall back to surrogate if QuTiP not installed
+          python qutip_postselected_teleportation.py || true
+          python iontrap_heralding_sim.py
+
+      - name: Upload figures
+        uses: actions/upload-artifact@v4
+        with:
+          name: figures
+          path: tex/figures/*.pdf

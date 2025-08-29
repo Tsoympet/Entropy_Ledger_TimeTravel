@@ -1,0 +1,46 @@
+name: Build PDFs (LaTeX)
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install TeX
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            latexmk texlive-base texlive-latex-recommended texlive-latex-extra \
+            texlive-fonts-recommended texlive-bibtex-extra texlive-science
+
+      - name: Build Base
+        working-directory: tex
+        run: |
+          latexmk -pdf -interaction=nonstopmode main.tex
+
+      - name: Build APS/PRL
+        working-directory: tex_aps
+        run: |
+          latexmk -pdf -interaction=nonstopmode main.tex
+          latexmk -pdf -interaction=nonstopmode prl_cut.tex
+
+      - name: Build Nature mimic
+        working-directory: tex_nature
+        run: |
+          latexmk -pdf -interaction=nonstopmode main.tex
+          latexmk -pdf -interaction=nonstopmode nature_cut.tex
+
+      - name: Upload PDFs
+        uses: actions/upload-artifact@v4
+        with:
+          name: PDFs
+          path: |
+            tex/*.pdf
+            tex_aps/*.pdf
+            tex_nature/*.pdf
