@@ -214,4 +214,4 @@ This research catalog should be updated periodically to track:
 
 ---
 
-*For citations of this catalog and the Entropy Ledger framework, see [`CITATION.cff`](../CITATION.cff)*
+*For citations of this catalog and the Entropy Ledger framework, see [`CITATION.cff`](CITATION.cff)*

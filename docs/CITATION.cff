@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "The Entropy Ledger: A Resource Theory and Information Inequalities for Consistent Time Travel"
+abstract: >
+  A unified resource theory for consistent time travel with Loop-DPI bounds,
+  a thermodynamic Entropy Ledger (Novikov as I-projection), single-shot converses,
+  multi-loop cut-sets, experiments, and an operational metaphysics appendix.
+authors:
+  - family-names: "Ts."
+    given-names: "Spiros"
+    affiliation: "Independent Researcher"
+  - name: "Collaborators"
+    affiliation: "Various Institutions"
+repository-code: "https://github.com/YOUR_USER/YOUR_REPO"
+license: "MIT"
+keywords:
+  - time travel
+  - resource theory
+  - information theory
+  - thermodynamics
+  - PAC-Bayes
+  - entropy
+version: "v0.1.0"
+date-released: "2025-08-29"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.TBD"
+    description: "Concept DOI provided by Zenodo (replace after first release)."
+preferred-citation:
+  type: article
+  title: "The Entropy Ledger: Operational Limits for Consistent Time Travel"
+  authors:
+    - family-names: "Ts."
+      given-names: "Spiros"
+    - name: "Collaborators"
+  journal: "Preprint"
+  year: 2025
+  doi: "10.5281/zenodo.TBD"
+  url: "https://github.com/YOUR_USER/YOUR_REPO"
