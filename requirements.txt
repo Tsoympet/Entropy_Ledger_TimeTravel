@@ -1,2 +1,5 @@
-numpy
-matplotlib
+numpy>=1.24
+matplotlib>=3.7
+qutip>=5.0
+mkdocs>=1.5
+mkdocs-material>=9.5

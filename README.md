@@ -6,6 +6,14 @@ This bundle contains:
 - `code/sim_loop_dpi.py` a toy simulation for Loop-DPI and Entropy Ledger trade-offs
 - `tex/figures/loop_dpi_bound.pdf` a ready-made plot used by the paper
 
+## Python dependencies
+Install the baseline dependencies for simulations and docs:
+```bash
+pip install -r requirements.txt
+```
+
+If you only need the core numeric simulations, install just NumPy/Matplotlib.
+
 ## Compile
 Use any standard LaTeX (no biblatex required):
 ```
