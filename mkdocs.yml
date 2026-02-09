@@ -19,6 +19,9 @@ nav:
       - Entropy Ledger: entropy_ledger.md
   - Simulations: simulations.md
   - Experiments: experiments.md
+  - Research:
+      - Time Travel Research Catalog: time_travel_research.md
+      - Integration Guide: research_integration_guide.md
   - Biological Effects: biological_effects.md
   - Metaphysics: metaphysics.md
   - Paper Templates: templates.md
