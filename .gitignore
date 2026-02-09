@@ -21,6 +21,13 @@ build/
 *.synctex.gz
 *.fdb_latexmk
 *.fls
+*Notes.bib
+
+# LaTeX output PDFs (exclude main PDFs, but keep figures)
+/tex/main.pdf
+/tex_aps/*.pdf
+/tex_nature/*.pdf
+/tex_nature_portfolio/*.pdf
 
 # IDEs
 .vscode/
