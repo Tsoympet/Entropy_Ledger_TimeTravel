@@ -24,6 +24,7 @@ python sim_loop_dpi.py
 ## Notes on "real" time travel
 - \*\*Forward\*\*: Realized via relativistic time dilation (fast/strong-gravity trajectories).
 - \*\*Backward (operational)\*\*: Emulated using heralded postselection and entanglement-assisted feedback. The net information gain per attempt is bounded by `-log2(p_succ)` bits, and enforcing Novikov consistency costs at least `kT * KL` (Entropy Ledger).
+- \*\*Biological Effects\*\*: See `docs/biological_effects.md` for research on time travel effects on living organisms, including thermodynamic constraints and physiological implications.
 
 
 ## Heavier simulations
