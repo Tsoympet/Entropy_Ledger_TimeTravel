@@ -238,7 +238,7 @@ While backward time travel for macroscopic organisms is physically impossible, f
 - Light exposure protocols for Earth time synchronization
 
 **Post-Travel Recovery:**
-- Gradual adaptation period (1 day per year of time differential)
+- Gradual adaptation period (estimated ~1 day per week of subjective time differential, requires further research)
 - Controlled light-dark cycles
 - Social zeitgeber re-establishment
 - Monitoring of cortisol and melatonin rhythms
@@ -359,7 +359,7 @@ For microscopic quantum systems (cells, molecules):
 
 1. **Quantum Error Correction**
    - Not viable for biological macromolecules
-   - Decoherence too rapid (~10⁻¹³ s)
+   - Decoherence too rapid (~10⁻¹³ s for proteins, ~10⁻¹⁵ s for larger biomolecular complexes)
    - Energy costs exceed biological tolerance
 
 2. **Cryogenic Quantum Preservation**
@@ -376,6 +376,13 @@ For microscopic quantum systems (cells, molecules):
 ```
 Protection_cost ≥ ℏ · Δω · τ_coherence / (kT)
 ```
+
+Where:
+- ℏ = reduced Planck constant
+- Δω = frequency bandwidth of quantum state
+- τ_coherence = coherence time of the biological system
+- k = Boltzmann's constant
+- T = temperature
 
 For biological molecules at body temperature, this cost is insurmountable, confirming that backward time travel protection for living organisms violates thermodynamic bounds.
 
